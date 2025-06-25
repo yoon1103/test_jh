@@ -1,0 +1,286 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{vertical-align: top; max-width: 100%;}
+button{cursor: pointer;}
+body{background: #fff; color: #333;}
+
+.warp{
+    width: 100%; height: 1070px; position: relative;
+}
+
+header{
+    width: 1340px; height: 100px; margin: auto; 
+    position: relative; background: #1b3b86; padding: 10px;
+}
+
+header h2{
+    padding: 20px 10px;
+}
+
+nav{
+    position: absolute; right: 20px; top: 55px; z-index: 9;
+}
+
+nav>ul{
+    display: flex;
+}
+
+nav>ul>li>a{
+    border: 1px solid #fff; background: none; color: #fff;
+    display: block; padding: 10px; width: 150px; text-align: center;
+}
+
+nav>ul>li:hover>a{
+    border: 1px solid #fff; background: #fff; color: #333;
+}
+
+.sub{
+    display: none;
+}
+
+.sub li a{
+    border: 1px solid none; background: #333333af; color: #fff;
+    display: block; padding: 10px; width: 150px; text-align: center;
+}
+
+.sub li a:hover{
+    border: 1px solid none; background: #d3d3d3e0; color: #333;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.slide{
+    width: 100%; height: 350px; position: relative; background: #646464;
+}
+
+.slide ul{
+    width: 100%; height: 100%;
+}
+
+.slide ul li{
+    position: absolute;
+    width: 100%; height: 100%;
+}
+
+.slide ul li h2{
+    position: absolute; transform: translate(-50%, -50%); top: 36%; left: 50%;
+    width: 100%; padding: 30px; background: rgba(0, 0, 0, 0.5);
+    color: #fff; font-size: 40px; text-align: center;
+}
+
+.s1{background: url(../images/Slide_1.jpg)no-repeat center/cover; display: block;}
+.s2{background: url(../images/Slide_2.jpg)no-repeat center/cover; display: none;}
+.s3{background: url(../images/Slide_3.jpg)no-repeat center/cover; display: none;}
+
+/*---------------------------------------*/
+
+.go{
+    position: relative; margin: auto; margin-top: -100px;
+    width: 1340px; height: 100px; background: #8697be; border-radius: 10px 10px 0 0;
+}
+
+.go ul{
+    display: flex; gap: 80px; padding: 10px;
+    width: 100%; height: 100%; justify-content: center;
+}
+
+.go ul li{
+    align-content: center;
+}
+
+.go ul li a{
+    display: flex;
+}
+
+.go ul li p{
+    margin-top: 27px; color: #fff; margin-left: 10px;
+}
+
+.go ul li img{
+    width: 80px; height: 80px; object-fit: cover; border-radius: 50%;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.contents{
+    width: 1340px; height: 600px; margin: auto; background: #bbbbbb;
+}
+
+/*---------------------------------------*/
+
+.banner{
+    width: 100%; height: 200px; position: relative; 
+    background: #fff; padding: 10px;
+}
+
+.banner .maps{
+    width: 100%; height: 100%; display: flex;
+    padding: 10px; background: #1b3b86; border-radius: 10px;
+}
+
+.banner .img{
+    margin-left: 60px; margin-top: 5px;
+}
+
+.banner .img img{
+    width: 200px; height: 150px; object-fit: cover; border-radius: 10px;
+}
+
+.banner .maps .text{
+    height: 100%; margin-left: 20px;
+    align-content: center;
+}
+
+.banner .maps .text h2{
+    font-size: 30px; color: #fff; margin-bottom: 3px;
+}
+
+.banner .maps .text p{
+    font-size: 18px; color: #fff;
+}
+
+.banner .arrow{
+    position: absolute; right: 30px; top: 50px;
+}
+
+/*---------------------------------------*/
+
+.con{
+    width: 100%; height: 300px; background: #c4c4c4;
+    display: flex;
+}
+
+/*---------------------------------------*/
+
+.notice{
+    width: 100%; height: 100%; padding: 10px 30px;
+    background: #fff; position: relative;
+}
+
+.notice h2{
+    width: 150px;  height: 45px; text-align: center; align-content: center;
+    background: #1b3b86; color: #fff; border-radius: 10px 10px 0 0;
+}
+
+.notice ul{
+    border-top: 5px solid #1b3b86; border-bottom: 5px solid #1b3b86; padding: 10px;
+    height: 230px;
+}
+
+.notice ul li{
+    border-bottom: 2px solid #1b3b86; padding: 13px 0;
+}
+
+.notice ul li:last-child{
+    border-bottom: none;
+}
+
+.notice ul li p{
+    width: 420px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+
+.notice ul li span{
+    position: absolute; right: 50px;
+}
+
+/*---------------------------------------*/
+
+.gall{
+    width: 100%; height: 100%; padding: 10px 30px;
+    background: #fff; position: relative;
+}
+
+.gall h2{
+    width: 150px;  height: 45px; text-align: center; align-content: center;
+    background: #1b3b86; color: #fff; border-radius: 10px 10px 0 0;
+}
+
+.gall ul{
+    border-top: 5px solid #1b3b86; border-bottom: 5px solid #1b3b86; padding: 10px;
+    height: 230px; display: flex; gap: 20px; justify-content: center;
+}
+
+.gall ul li{
+    align-content: center;
+}
+
+.gall ul li p{
+    text-align: center; margin-top: 3px;
+}
+
+.gall ul li img{
+    width: 150px; height: 150px; object-fit: cover;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+footer{
+    width: 1340px; height: 120px; position: relative; 
+    background: #949494; margin: auto; padding: 10px; display: flex;
+    align-content: center;
+}
+
+footer p{
+    color: #fff; margin-top: 35px; margin-left: 30px; font-size: 20px;
+}
+
+footer div{
+    position: absolute; right: 60px; margin-top: 10px;
+}
+
+footer .sns{
+    display: flex; gap: 10px; width: 170px; height: 40px; background: #fff;
+    border-radius: 10px; justify-content: center; align-content: center;
+}
+
+footer .sns li{
+    align-content: center;
+}
+
+footer select{
+    width: 170px; height: 30px; margin-top: 5px;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.popup{
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.7); z-index: 9999; display: none;
+}
+
+.popup .popcon{
+    position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 800px; height: 510px; background: #fff; padding: 10px;
+    border-radius: 20px; border: 10px solid #1b3b86;
+}
+
+.popcon h2{
+    padding: 10px; margin-bottom: 5px; margin-left: 25px;
+}
+
+.popcon .img{
+    text-align: center;
+}
+
+.popcon .img img{
+    width: 700px; height: 300px; object-fit: cover;
+}
+
+.popcon .text{
+    text-align: center; margin-top: 15px;
+}
+
+.popcon .close{
+    position: absolute; right: 40px; bottom: 10px;
+}
+
+.popcon .close button{
+    padding: 10px; border: none; background: #1b3b86; color: #fff;
+}
+
+.popcon .close button:hover{
+    padding: 10px; border: none; background: #0f2046; color: #fff;
+}
